@@ -1,0 +1,49 @@
+/* ============================================================
+   styles.css  -  Estilos propios que complementan a Bootstrap
+   ============================================================ */
+
+/* La marca del navbar con un toque "espacial". */
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Sección de bienvenida (hero) del inicio. */
+.hero {
+  background: linear-gradient(135deg, #0b1d3a, #2a4d6e);
+  color: #ffffff;
+  border-radius: 12px;
+}
+
+/* Las imágenes de las cards mantienen una proporción uniforme. */
+.card-img-top {
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+/* Pequeño efecto al pasar el cursor sobre una card. */
+.card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* El badge del carrito se separa un poco del texto "Carrito". */
+#contador-carrito {
+  margin-left: 4px;
+}
+
+/* Empuja el footer hacia abajo cuando hay poco contenido. */
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex: 1;
+}

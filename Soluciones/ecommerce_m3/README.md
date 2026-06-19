@@ -35,3 +35,8 @@ El menú se repite hasta elegir `0) Salir`.
 - **Funciones:** hay más de 3 funciones separadas; `calcular_total(carrito)`
   recibe un parámetro y **retorna un valor**.
 - Nombres en **snake_case**, indentación correcta y comentarios breves.
+
+## Evidencias
+
+![alt text](image.png)
+![alt text](image-1.png)

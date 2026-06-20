@@ -1,0 +1,12 @@
+{% extends "tienda/base.html" %}
+{% block titulo %}Inicio | Mi Tienda{% endblock %}
+{% block content %}
+  <h1>Bienvenido a Mi Tienda</h1>
+  <p class="lead">Inicia sesión para ver el catálogo de productos.</p>
+  {% if user.is_authenticated %}
+    <a href="{% url 'productos' %}" class="btn btn-primary">Ver productos</a>
+  {% else %}
+    <a href="{% url 'login' %}" class="btn btn-primary">Iniciar sesión</a>
+    <a href="{% url 'registro' %}" class="btn btn-outline-secondary">Crear cuenta</a>
+  {% endif %}
+{% endblock %}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block titulo %}Administración de Catálogo{% endblock %}</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="{% url 'listar_productos' %}">🛒 Admin Catálogo</a>
+      <a class="nav-link text-white" href="/admin/">Django Admin</a>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+    <!-- Sistema de mensajes de Django (éxito / error) -->
+    {% if messages %}
+      {% for mensaje in messages %}
+        <div class="alert alert-{% if mensaje.tags == 'error' %}danger{% else %}success{% endif %}">
+          {{ mensaje }}
+        </div>
+      {% endfor %}
+    {% endif %}
+
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>

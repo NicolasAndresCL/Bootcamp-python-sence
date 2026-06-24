@@ -1,0 +1,45 @@
+# Archivos de Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+*.manifest
+*.spec
+
+# Archivos de entorno virtual
+venv/
+env/
+ENV/
+*.env
+*.venv
+
+# Archivos de configuración local
+*.local
+*.log
+*.pot
+*.pyc
+
+# Archivos de base de datos
+db.sqlite3
+*.db
+
+# Archivos de migraciones (opcional, si no quieres versionarlas)
+*/migrations/__pycache__/
+*/migrations/*.py
+
+# Archivos de compilación
+build/
+dist/
+*.bak
+
+# Archivos de IDE
+.vscode/
+.idea/
+*.swp
+
+# Archivos de Django
+staticfiles/
+media/
